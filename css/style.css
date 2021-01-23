@@ -588,7 +588,8 @@ address {
 
     transition: border var(--time-duration) var(--timing-function), outline-color var(--time-duration) var(--timing-function);
 }
-.footer-input:focus {
+.footer-input:focus,
+.footer-button:focus {
     border: 1px solid var(--accent-color);
     outline-color: var(--accent-color);
 }
@@ -613,6 +614,8 @@ address {
     color: var(--primary-backgroud-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    transition: border var(--time-duration) var(--timing-function), outline-color var(--time-duration) var(--timing-function);
 }
 .send-icon {
     margin-left: 10px;
