@@ -611,6 +611,7 @@ address {
 }
 .send-icon {
     margin-left: 10px;
+    fill: currentColor;
 }
 /*Оформлення другої сторінки Portfolio*/
 .main-portfolio {
