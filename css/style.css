@@ -592,6 +592,11 @@ address {
     border: 1px solid var(--accent-color);
     outline-color: var(--accent-color);
 }
+.footer-form-sign {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 .footer-button {
     width: 200px;
     height: 50px;
