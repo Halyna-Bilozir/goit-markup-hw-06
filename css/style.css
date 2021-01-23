@@ -589,7 +589,8 @@ address {
     transition: border var(--time-duration) var(--timing-function), outline-color var(--time-duration) var(--timing-function);
 }
 .footer-input:focus,
-.footer-button:focus {
+.footer-button:focus,
+.footer-button:hover {
     border: 1px solid var(--accent-color);
     outline-color: var(--accent-color);
 }
