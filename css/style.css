@@ -863,6 +863,9 @@ button {
     display: block;
     margin-bottom: 10px;
 }
+.modal-container {
+    position: relative;
+}
 .modal-text {
     display: block;
     margin-bottom: 4px;
@@ -874,8 +877,6 @@ button {
     color: var(--primary-text-color);
 }
 .modal-input {
-    position: relative;
-
     width: 100%;
     padding-top: 11px;
     padding-bottom: 11px;
@@ -893,25 +894,25 @@ button {
     width: 18px;
     height: 18px;
 
-    background-size: contain;
-    background-origin: border-box;
     color: var(--secondary-text-color);
+    background-color: blue;
 }
 .modal-icon.name-icon {
     fill: currentColor;
-    background-image: url(./images/symbol-defs.svg#icon-name-modal);
+    background-image: url(../images/symbol-defs.svg#icon-name-modal);
 }
 .modal-icon.tel-icon {
     fill: currentColor;
-    background-image: url(./images/symbol-defs.svg#icon-tel-modal);
+    background-image: url(../images/symbol-defs.svg#icon-tel-modal);
 }
 .modal-icon.email-icon {
     fill: currentColor;
-    background-image: url(./images/symbol-defs.svg#icon-email-modal);
+    background-image: url(../images/symbol-defs.svg#icon-email-modal);
 }
 
 /*icon-ok-modal*/
-.modal-input::after {
+/*.modal-input::after {
+    content: "";
     position: absolute;
     left: 12px;
     top: 50%;
@@ -922,4 +923,4 @@ button {
 
     fill: currentColor;
     background-image: url(./images/symbol-defs.svg#icon-name-modal);
-}
+}*/
