@@ -615,6 +615,7 @@ address {
     color: var(--primary-backgroud-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
 
     transition: border var(--time-duration) var(--timing-function), outline-color var(--time-duration) var(--timing-function);
 }
@@ -820,7 +821,7 @@ button {
 
     transition: transform var(--time-duration) var(--timing-function);
 }
-/*Оформлення кнопки*/
+/*Оформлення кнопки в модальному вікні*/
 .close-icon {
     fill: currentColor;
 }
@@ -841,4 +842,84 @@ button {
     box-sizing: border-box;
     color: #000;
     border-radius: 50%;
+}
+/*Створення форми*/
+.modal-form {
+    margin: 0px;
+    padding: 40px;
+}
+.modal-header {
+    margin-top: 0px;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+
+    color: var(--secondary-text-color);
+}
+.modal-label {
+    display: block;
+    margin-bottom: 10px;
+}
+.modal-text {
+    display: block;
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: var(--primary-text-color);
+}
+.modal-input {
+    position: relative;
+
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.modal-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 18px;
+    height: 18px;
+
+    background-size: contain;
+    background-origin: border-box;
+    color: var(--secondary-text-color);
+}
+.modal-icon.name-icon {
+    fill: currentColor;
+    background-image: url(./images/symbol-defs.svg#icon-name-modal);
+}
+.modal-icon.tel-icon {
+    fill: currentColor;
+    background-image: url(./images/symbol-defs.svg#icon-tel-modal);
+}
+.modal-icon.email-icon {
+    fill: currentColor;
+    background-image: url(./images/symbol-defs.svg#icon-email-modal);
+}
+
+/*icon-ok-modal*/
+.modal-input::after {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 18px;
+    height: 18px;
+
+    fill: currentColor;
+    background-image: url(./images/symbol-defs.svg#icon-name-modal);
 }
