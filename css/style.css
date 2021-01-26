@@ -509,6 +509,7 @@ address {
 }
 .footer-address-block {
     margin-right: 70px;
+    min-width: 231px;
 }
 .footer-address-contact { 
     color: rgba(255, 255, 255, 0.6);
