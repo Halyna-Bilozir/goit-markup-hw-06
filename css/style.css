@@ -902,7 +902,7 @@ button {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
-/*.modal-icon {
+.modal-icon {
     position: absolute;
     left: 12px;
     top: 50%;
@@ -915,25 +915,9 @@ button {
     background-color: var(--primary-backgroud-color);
     background-size: contain;
     background-origin: border-box;
-}*/
-.modal-input-name::after {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    content: " ";
-    width: 18px;
-    height: 18px;
-
-    color: var(--secondary-text-color);
-    background-color: var(--primary-backgroud-color);
-    background-image: url('../images/symbol-defs.svg#icon-name-modal');
-    background-size: contain;
-    background-origin: border-box;
-    background-position: center;
 }
-/*.modal-icon.name-icon {
+
+*.modal-icon.name-icon {
     fill: currentColor;
     background-image: url('../images/symbol-defs.svg#icon-name-modal');
 }
@@ -944,7 +928,7 @@ button {
 .modal-icon.email-icon {
     fill: currentColor;
     background-image: url('../images/symbol-defs.svg#icon-email-modal');
-}*/
+}
 .modal-input.text {
     padding-left: 16px;
 
