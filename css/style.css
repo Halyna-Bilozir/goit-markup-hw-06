@@ -869,14 +869,10 @@ button {
 .modal-label:not(:last-of-type) {
     display: block;
     margin-bottom: 10px;
-
-    transition: color var(--time-duration) var(--timing-function);
 }
 .modal-label:last-of-type {
     display: block;
     margin-bottom: 20px;
-
-    transition: color var(--time-duration) var(--timing-function);
 }
 .modal-label:focus-within .modal-icon{
     color: var(--accent-color);
@@ -906,6 +902,8 @@ button {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    transition: border var(--time-duration) var(--timing-function);
 }
 .modal-icon {
     position: absolute;
@@ -915,6 +913,8 @@ button {
 
     color: var(--secondary-text-color);
     background-color: var(--primary-backgroud-color);
+
+    transition: color var(--time-duration) var(--timing-function);
 }
 
 .modal-icon-name,
@@ -935,27 +935,67 @@ button {
 
     color: rgba(117, 117, 117, 0.5);
 }
-.checkbox {
-    margin-bottom: 20px;
-    padding-left: 31px;
+.modal-checkbox {
+    margin-bottom: 30px;
+}
+.modal-checkbox-label {
     position: relative;
 }
-.checkbox-input {
-    appearance: none;
-}
-.checkbox-text {
+.modal-checkbox-input {
     display: inline-block;
+    appearance: none;
+
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal-checkbox-text {
+    display: inline-block;
+    margin-left: 32px;
     font-size: 14px;
     line-height: 1.71;
 
     color: var(--primary-text-color);
 }
-.checkbox-link {
+.modal-checkbox-link {
     color: var(--accent-color);
-    text-decoration: underline;
+    text-decoration: underline solid;
 }
-.checbox-input:checked ~ .checkbox-icon {
+.modal-checkbox-icon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 16px;
+    height: 15px;
+    display: block;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 3px;
+    color: var(--primary-backgroud-color);
+    border: 2px  solid var(--secondary-text-color);
+    background-color: var(--primary-backgroud-color);
+
+    transition: bacground-color var(--time-duration) var(--timing-function), color var(--time-duration) var(--timing-function);
+}
+.modal-checkbox-ok {
+    fill: currentColor;
+    width: 15px;
+    height: 12px;
+}
+.modal-checkbox-input:checked ~ .modal-checkbox-icon {
     background-color: var(--accent-color);
+    color: var(--primary-backgroud-color);
+
+    border-color: transparent;
+    background-size: contain;
+    background-origin: border-box;
 }
 .modal-button-send {
     width: 200px;
@@ -989,24 +1029,3 @@ button {
     border: 1px solid var(--accent-color);
     outline-color: var(--accent-color);
 }
-.checkbox-icon {
-    width: 15px;
-    height: 15px;
-    
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-
-    border-radius: 4px;
-    color: var(--primary-backgroud-color);
-    border: 3px  solid var(--secondary-text-color);
-    background-color: var(--primary-backgroud-color);
-    background-image: url('../images/symbol-defs.svg#icon-ok-modal');
-
-    transition: bacground-color var(--time-duration) var(--timing-function);
-}
-
-
-
-    
